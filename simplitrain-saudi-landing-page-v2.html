@@ -613,7 +613,60 @@
     .final-cta, .pricing-panel{padding:40px 24px;}
     .cta-row{flex-direction:column;}
     .btn-primary, .btn-whatsapp{justify-content:center;}
-    .pricing-scale{gap:24px;}
+  /* ---------- Vision 2030 Section ---------- */
+  .vision-section{
+    background:var(--card);
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+    padding:76px 0;
+  }
+  .vision-grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:20px;
+    margin-top:36px;
+  }
+  .vision-card{
+    background:#FFFFFF;
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:26px 22px;
+    box-shadow:0 4px 12px rgba(20,37,31,0.03);
+    transition:transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .vision-card:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(20,37,31,0.06);
+  }
+  .vision-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    background:rgba(31,92,75,0.08);
+    color:var(--emerald);
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.76rem;
+    font-weight:600;
+    padding:4px 10px;
+    border-radius:6px;
+    margin-bottom:14px;
+  }
+  .vision-card h3{
+    font-size:1.1rem;
+    line-height:1.35;
+    margin-bottom:10px;
+    color:var(--ink);
+  }
+  .vision-card p{
+    color:var(--muted);
+    font-size:0.92rem;
+    line-height:1.5;
+  }
+  @media (max-width:900px){
+    .vision-grid{ grid-template-columns:repeat(2, 1fr); }
+  }
+  @media (max-width:620px){
+    .vision-grid{ grid-template-columns:1fr; }
   }
 
   /* ---------- Interactive Platform Showcase Carousel ---------- */
@@ -946,6 +999,53 @@
           <span class="num">04 / Measure</span>
           <h3>See what to run again</h3>
           <p>Trainer utilization and revenue per course, so the next quarter's schedule is a decision, not a guess.</p>
+        </div>
+      </div>
+  </section>
+
+  <!-- VISION 2030 ALIGNMENT SECTION -->
+  <section class="vision-section" id="vision2030">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Vision 2030 Alignment</span>
+        <h2>Powering Saudi Arabia’s Human Capability Development Program</h2>
+        <p>As the Kingdom accelerates workforce localization and digital transformation, SimpliTrain provides the operational engine to upskill your workforce, safeguard Hadaf subsidies, and pass TVTC audits with zero friction.</p>
+      </div>
+      <div class="vision-grid">
+        <div class="vision-card">
+          <span class="vision-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            HCDP &amp; Nitaqat
+          </span>
+          <h3>Saudization &amp; Skill Localization</h3>
+          <p>Track Saudi national career pathways, skill gap assessments, and mandatory compliance milestones required for Nitaqat workforce targets.</p>
+        </div>
+
+        <div class="vision-card">
+          <span class="vision-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="M8 14h.01M12 14h.01M16 14h.01"/></svg>
+            Hadaf (HRDF)
+          </span>
+          <h3>Hadaf Subsidy Safeguard</h3>
+          <p>Automate deadline tracking, attendance logging, and resubmission windows to prevent forfeited training subsidy claims.</p>
+        </div>
+
+        <div class="vision-card">
+          <span class="vision-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            TVTC Ready
+          </span>
+          <h3>TVTC Accreditation Readiness</h3>
+          <p>Maintain continuous, audit-ready records of trainer credentials, course materials, and learner certificates in a single platform.</p>
+        </div>
+
+        <div class="vision-card">
+          <span class="vision-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            Multi-Branch KSA
+          </span>
+          <h3>Nationwide Standard Execution</h3>
+          <p>Standardize classroom (ILT) and online (VILT) training operations across Riyadh, Jeddah, Dammam, and regional centers in English &amp; Arabic.</p>
         </div>
       </div>
     </div>
